@@ -1,0 +1,90 @@
+/* ---RESET---*/
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html{
+   /* 1rem = 16px (User Agent) = 100% (User Agent) */
+   font-size: 62,5%; /* 10px */
+}
+
+header{
+  width: 100%;
+  height: 104px;
+  background: url(/assets/images/logo.png) no-repeat;
+  background-size: inherit;
+  background-position: bottom -0.2px right 0px;
+  background-color:#1C4664;
+}
+
+.layer-liner-gradient{
+  background-image: linear-gradient(to right, #1a374c,#1a364b, #1a364b85, #0000002e, #00000026);
+  width: 100%;
+  height: 100%;
+}
+
+.header-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.header-content .title{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+  font-size: 26px;
+  color: white;
+  align-content: center;
+  display: flex;
+}
+
+.header-content .menu-home{
+  display: flex;
+  align-items: center;
+}
+
+.header-icon{
+  width: 50px;
+  height: 50px;
+}
+
+.pipe{
+  width: 2px;
+  height: 40px;
+  opacity: 0.6;
+  background-color: #ffffff;
+  margin: 0 18px 0 18px;
+}
+
+.header-button:hover {
+  filter: brightness(90%);
+  cursor: pointer;
+}
+
+.header-button{
+  display: flex;
+}
+
+.user-content{
+  display: inline-grid;
+  align-items: center;
+}
+
+.user-content span{
+  margin-left: 3px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+}
+
+.table-icon{
+  width: 15px;
+  height: 15px;
+}
