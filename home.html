@@ -8,12 +8,17 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="styles/home.css">
 
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,450&display=swap" rel="stylesheet">
+
+  <!-- SCRIPT -->
+  <script src="/home.js"></script>
 </head>
 
 <body>
@@ -59,23 +64,25 @@
       </div>
       <hr>
       <div class="grid">
-        <div class="info-content">
+        <div class="info-content" id="info-content">
           <div class="register">
             <div class="build">
-              <label for="build">Predio</label>
+              <label for="build">Predio*</label>
               <select name="build" id="build">
                 <option value="build-null"></option>
                 <option value="build-1">Predio 1</option>
                 <option value="build-2">Predio 2</option>
                 <option value="build-3">Predio 3</option>
+                <option value="build-4">Predio 4</option>
+                <option value="build-5">Predio 5</option>
               </select>
             </div>
             <div class="local">
-              <label for="local">Local de Trabalho</label>
+              <label for="local">Local de Trabalho*</label>
               <input type="text" id="local" name="local">
             </div>
             <div class="button-register">
-              <button>
+              <button onclick="addElement();">
                 <img src="assets/icons/add.svg" alt="add" class="add-icon">
               </button>
             </div>
@@ -85,78 +92,8 @@
               <div class="center">
                 <th style="width: 227px;">Predio</th>
                 <th>Local de Trabalho</th>
-                <th></th>
+                <th style="width: 35px;"></th>
               </div>
-            </tr>
-            <tr class="tr-table">
-              <td>Predio 1</td>
-              <td>Local de Trabalho 1</td>
-              <td class="td-icon">
-                <div class="table-buttons">
-                  <button>
-                    <img class="table-icon" src="assets/icons/edit.svg" alt="pen">
-                  </button>
-                  <button>
-                    <img class="table-icon" src="assets/icons/delete.svg" alt="trash">
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr class="tr-table">
-              <td>Predio 2</td>
-              <td>Local de Trabalho 2</td>
-              <td class="td-icon">
-                <div class="table-buttons">
-                  <button>
-                    <img class="table-icon" src="assets/icons/edit.svg" alt="pen">
-                  </button>
-                  <button>
-                    <img class="table-icon" src="assets/icons/delete.svg" alt="trash">
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr class="tr-table">
-              <td>Predio 3</td>
-              <td>Local de Trabalho 3</td>
-              <td class="td-icon">
-                <div class="table-buttons">
-                  <button>
-                    <img class="table-icon" src="assets/icons/edit.svg" alt="pen">
-                  </button>
-                  <button>
-                    <img class="table-icon" src="assets/icons/delete.svg" alt="trash">
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr class="tr-table">
-              <td>Predio 4</td>
-              <td>Local de Trabalho 4</td>
-              <td class="td-icon">
-                <div class="table-buttons">
-                  <button>
-                    <img class="table-icon" src="assets/icons/edit.svg" alt="pen">
-                  </button>
-                  <button>
-                    <img class="table-icon" src="assets/icons/delete.svg" alt="trash">
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr class="tr-table">
-              <td>Predio 5</td>
-              <td>Local de Trabalho 5</td>
-              <td class="td-icon">
-                <div class="table-buttons">
-                  <button>
-                    <img class="table-icon" src="assets/icons/edit.svg" alt="pen">
-                  </button>
-                  <button>
-                    <img class="table-icon" src="assets/icons/delete.svg" alt="trash">
-                  </button>
-                </div>
-              </td>
             </tr>
           </table>
         </div>
